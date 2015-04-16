@@ -33,8 +33,8 @@ public class MainActivity extends ActionBarActivity {
 
                             @Override
                             public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-                                timeNeededToWakeUp.setText(hourOfDay + ":" + sMinute);
-                                timeToGoToSleep.setText(hourTimeToSleep + ":" + sMinute + ap);
+                                //timeNeededToWakeUp.setText(hourOfDay + ":" + sMinute);
+                                //timeToGoToSleep.setText(hourTimeToSleep + ":" + sMinute + ap);
                             }
                         }, hour, minute, false);
                 tpd.setTitle("Set Time Needed To Wake Up");
@@ -52,8 +52,8 @@ public class MainActivity extends ActionBarActivity {
 
                             @Override
                             public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-                                hoursNeededToSleep.setText(hourOfDay + ":" + sMinute);
-                                timeToGoToSleep.setText(FormatTime(true, hourOfDay, minute);
+                                //hoursNeededToSleep.setText(hourOfDay + ":" + sMinute);
+                                //timeToGoToSleep.setText(FormatTime(true, hourOfDay, minute);
                             }
                         }, hour, minute, true);
                 tpd.setTitle("Set Time Needed To Sleep");
@@ -88,7 +88,7 @@ public class MainActivity extends ActionBarActivity {
 
     private String CalculateTimeToSleep(int hourSleepNeeded, int minuteSleepNeeded, int hourToWakeUp, int minuteToWakeUp) {
         int hourTimeToSleep = hourSleepNeeded - hourToWakeUp;
-        int minuteTimeToSleep = minuteSleepNeeded - minuteToWakeUp);
+        int minuteTimeToSleep = minuteSleepNeeded - minuteToWakeUp;
         String ap = "";
 
         if(hourTimeToSleep < 0) {
